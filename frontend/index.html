@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Filter + Notes App</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add Font Awesome for menu icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <h1 class="logo">LUXE</h1>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <aside>
+      <h3>Filter by Category</h3>
+      <label><input type="checkbox" value="sunglasses" class="filter" /> Sunglasses</label><br>
+      <label><input type="checkbox" value="perfumes" class="filter" /> Perfumes</label><br>
+      <label><input type="checkbox" value="handbags" class="filter" /> Handbags</label><br>
+      <label><input type="checkbox" value="neckchains" class="filter" /> Neckchains</label>
+    </aside>
+
+    <div class="productsContainer" id="productContainer"></div>
+  </div>
+
+  <hr />
+
+  <section class="notes-section">
+    <h2>Notes App</h2>
+    <div class="interact">
+      <textarea placeholder="Write your note here..." id="note"></textarea>
+      <input type="color" id="colorpicker" value="#ff1f12" />
+      <button onclick="addNotes()">Add Note</button>
+    </div>
+    <div id="notesContainer" class="notes-container"></div>
+  </section>
+
+  <!-- New Sections -->
+  <section id="about" class="content-section">
+    <div class="section-container">
+      <h2>About Us</h2>
+      <p>Discover the essence of luxury with our curated collection of premium products and services.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="content-section">
+    <div class="section-container">
+      <h2>Our Projects</h2>
+      <p>Explore our exclusive collaborations and limited edition collections.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <div class="section-container">
+      <h2>Contact</h2>
+      <p>Reach out to our concierge service for personalized assistance.</p>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
